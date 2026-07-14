@@ -201,31 +201,33 @@ export default function App() {
             </div>
 
             {/* Right Column: Beautiful Resort Pool/Steps Landscape Photo & Big Scan QR Code */}
-            <div className="flex flex-col items-center md:items-end justify-center gap-4 w-full max-w-[240px] md:max-w-[280px]">
-              <div className="relative w-full h-44 md:h-48 rounded-xl overflow-hidden shadow-md border-2 border-[#dfccb0]">
-                <img
-                  src={resortPoolBg}
-                  alt="Casa Del Sol illuminated bar steps"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
+<div className="flex flex-col items-center md:items-end justify-center gap-4 w-full max-w-[240px] md:max-w-[280px]">
+  <div className="relative w-[380px] h-[300px] md:h-[500px] lg:h-[650px] rounded-xl overflow-hidden shadow-md border-2 border-[#dfccb0]">
+    <img
+      src={resortPoolBg}
+      alt="Casa Del Sol illuminated bar steps"
+      className="w-full h-full object-cover"
+      referrerPolicy="no-referrer"
+    />
+  </div>
 
-              {/* Real Scannable Big QR Code */}
-              <div className="flex items-center justify-center md:justify-end w-full">
-                <div 
-                  onClick={() => setShowQrModal(true)}
-                  className="bg-white p-2.5 border border-[#dfccb0] rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-all flex flex-col items-center gap-1.5 group max-w-[150px] w-full hover:scale-[1.03]"
-                >
-                  <img
-                    src={qrCode}
-                    alt="Menu QR Code"
-                    className="w-28 h-28 object-contain transition-transform group-hover:scale-[1.02]"
-                  />
-                  <span className="text-[8px] font-mono font-bold tracking-widest text-[#2E241E] uppercase">SCAN MENU</span>
-                </div>
-              </div>
-            </div>
+  {/* Real Scannable Big QR Code */}
+  <div className="flex items-center justify-center md:justify-end w-full">
+    <div
+      onClick={() => setShowQrModal(true)}
+      className="bg-white p-2.5 border border-[#dfccb0] rounded-xl shadow-md cursor-pointer hover:shadow-lg transition-all flex flex-col items-center gap-1.5 group max-w-[150px] w-full hover:scale-[1.03]"
+    >
+      <img
+        src={qrCode}
+        alt="Menu QR Code"
+        className="w-28 h-28 object-contain transition-transform group-hover:scale-[1.02]"
+      />
+      <span className="text-[8px] font-mono font-bold tracking-widest text-[#2E241E] uppercase">
+        SCAN MENU
+      </span>
+    </div>
+  </div>
+</div>
 
           </div>
 
