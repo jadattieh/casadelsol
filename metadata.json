@@ -1,0 +1,6 @@
+{
+  "name": "Casa Del Sol Menu",
+  "description": "A beautiful, premium digital menu for Casa Del Sol Restaurant & Pool, preserving the original design, items, and pricing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
